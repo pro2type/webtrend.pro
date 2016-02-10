@@ -1,0 +1,786 @@
+@font-face {
+  font-family: 'AvantGardeGothicC-Demi';
+  src: url("../fonts/AvantGardeGothicC-Demi.eot");
+  src: url("../fonts/AvantGardeGothicC-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/AvantGardeGothicC-Demi.otf") format("otf"), url("../fonts/AvantGardeGothicC-Demi.woff") format("woff"), url("../fonts/AvantGardeGothicC-Demi.ttf") format("truetype"), url("../fonts/AvantGardeGothicC-Demi#AvantGardeGothicC-Demi.svg") format("svg"); }
+
+@font-face {
+  font-family: 'AvantGardeGothicC-Book';
+  src: url("../fonts/AvantGardeGothicC-Book.eot");
+  src: url("../fonts/AvantGardeGothicC-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/AvantGardeGothicC-Book.otf") format("otf"), url("../fonts/AvantGardeGothicC-Book.woff") format("woff"), url("../fonts/AvantGardeGothicC-Book.ttf") format("truetype"), url("../fonts/AvantGardeGothicC-Book#AvantGardeGothicC-Book.svg") format("svg"); }
+
+/* line 34, /JOBS/Webtrend/css/style.scss */
+* {
+  font-family: "AvantGardeGothicC-Book";
+  letter-spacing: .04em;
+  outline: none !important; }
+
+/* line 37, /JOBS/Webtrend/css/style.scss */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* line 42, /JOBS/Webtrend/css/style.scss */
+input, textarea {
+  border-radius: 0; }
+
+/* line 45, /JOBS/Webtrend/css/style.scss */
+input:focus, textarea:focus {
+  outline: none; }
+
+/* line 50, /JOBS/Webtrend/css/style.scss */
+.red {
+  color: #da3039; }
+
+/* line 53, /JOBS/Webtrend/css/style.scss */
+.white {
+  color: #fff; }
+
+/* line 56, /JOBS/Webtrend/css/style.scss */
+.black {
+  color: #000000; }
+
+/* line 61, /JOBS/Webtrend/css/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'AvantGardeGothicC-Demi';
+  text-transform: uppercase; }
+
+/* line 67, /JOBS/Webtrend/css/style.scss */
+a.btn {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #da3039;
+  color: #fff;
+  border-radius: 0;
+  font-family: "AvantGardeGothicC-Book";
+  font-size: 14px;
+  font-weight: 300; }
+
+/* line 78, /JOBS/Webtrend/css/style.scss */
+.gamburger {
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 20px;
+  top: 20px;
+  background-color: #da3039;
+  cursor: pointer;
+  z-index: 999; }
+
+/* line 90, /JOBS/Webtrend/css/style.scss */
+nav {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 290px;
+  background-color: rgba(0, 0, 0, 0.82);
+  z-index: 99;
+  transition: .5s; }
+  /* line 98, /JOBS/Webtrend/css/style.scss */
+  nav a.logotype {
+    display: inline-block;
+    margin-left: 72px;
+    width: 144px;
+    height: 113px;
+    background-image: url(../images/logotype.png); }
+  /* line 105, /JOBS/Webtrend/css/style.scss */
+  nav a.phone {
+    display: inline-block;
+    margin-left: 72px;
+    margin-top: 67px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s; }
+    /* line 114, /JOBS/Webtrend/css/style.scss */
+    nav a.phone:hover {
+      color: #da3039; }
+  /* line 118, /JOBS/Webtrend/css/style.scss */
+  nav a.btn {
+    margin-top: 19px;
+    margin-left: 72px;
+    transition: all 0.3s; }
+    /* line 122, /JOBS/Webtrend/css/style.scss */
+    nav a.btn:hover {
+      color: #da3039;
+      background-color: #fff; }
+  /* line 128, /JOBS/Webtrend/css/style.scss */
+  nav ul.main_menu li {
+    margin-left: 72px; }
+    /* line 130, /JOBS/Webtrend/css/style.scss */
+    nav ul.main_menu li a {
+      display: inline-block;
+      position: relative;
+      margin: 12px 0;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 12px;
+      text-decoration: none;
+      transition: all 0.3s; }
+      /* line 140, /JOBS/Webtrend/css/style.scss */
+      nav ul.main_menu li a:hover {
+        color: #999999; }
+      /* line 143, /JOBS/Webtrend/css/style.scss */
+      nav ul.main_menu li a::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: -46px;
+        width: 18px;
+        height: 18px;
+        background-image: url(../images/main_menu.png); }
+      /* line 152, /JOBS/Webtrend/css/style.scss */
+      nav ul.main_menu li a.portfolio {
+        margin: 6vh 0 5vh; }
+        /* line 155, /JOBS/Webtrend/css/style.scss */
+        nav ul.main_menu li a.portfolio::before {
+          display: none; }
+      /* line 162, /JOBS/Webtrend/css/style.scss */
+      nav ul.main_menu li a.development::before {
+        background-position: 0px 0px; }
+      /* line 165, /JOBS/Webtrend/css/style.scss */
+      nav ul.main_menu li a.development:hover::before {
+        background-position: 18px 0px; }
+      /* line 168, /JOBS/Webtrend/css/style.scss */
+      nav ul.main_menu li a.solutions::before {
+        background-position: 0px 53px; }
+      /* line 171, /JOBS/Webtrend/css/style.scss */
+      nav ul.main_menu li a.solutions:hover::before {
+        background-position: 18px 53px; }
+      /* line 174, /JOBS/Webtrend/css/style.scss */
+      nav ul.main_menu li a.support::before {
+        background-position: 0px 35px; }
+      /* line 177, /JOBS/Webtrend/css/style.scss */
+      nav ul.main_menu li a.support:hover::before {
+        background-position: 18px 35px; }
+      /* line 180, /JOBS/Webtrend/css/style.scss */
+      nav ul.main_menu li a.prototype::before {
+        background-position: 0px 15px;
+        height: 15px; }
+      /* line 184, /JOBS/Webtrend/css/style.scss */
+      nav ul.main_menu li a.prototype:hover::before {
+        background-position: 18px 15px; }
+  /* line 190, /JOBS/Webtrend/css/style.scss */
+  nav ul.second_menu {
+    position: absolute;
+    bottom: 3vh; }
+    /* line 194, /JOBS/Webtrend/css/style.scss */
+    nav ul.second_menu li a {
+      display: inline-block;
+      margin: 7px 0;
+      margin-left: 72px;
+      font-weight: 300;
+      font-size: 12px;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s; }
+      /* line 203, /JOBS/Webtrend/css/style.scss */
+      nav ul.second_menu li a:hover {
+        color: #999999; }
+
+/* line 211, /JOBS/Webtrend/css/style.scss */
+header ul.slider {
+  position: relative; }
+  /* line 213, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li {
+    text-align: center;
+    width: 100%;
+    background-color: #949da8;
+    background-position: center center;
+    background-size: cover;
+    cursor: move; }
+    /* line 220, /JOBS/Webtrend/css/style.scss */
+    header ul.slider li div.people {
+      padding-left: 300px;
+      padding-top: 90px;
+      height: 100%;
+      min-height: 100%;
+      background-position: 65% bottom;
+      background-size: 70%;
+      background-repeat: no-repeat; }
+    /* line 229, /JOBS/Webtrend/css/style.scss */
+    header ul.slider li span.title {
+      letter-spacing: .57em;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: default; }
+      /* line 235, /JOBS/Webtrend/css/style.scss */
+      header ul.slider li span.title:nth-child(1)::after, header ul.slider li span.title:nth-child(2)::after {
+        content: '.';
+        display: inline-block;
+        margin: 0 30px;
+        color: #da3039; }
+    /* line 243, /JOBS/Webtrend/css/style.scss */
+    header ul.slider li .big_title {
+      position: relative;
+      margin-top: 26px;
+      padding: 20px 25px;
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.82);
+      color: #fff;
+      font-size: 53px;
+      text-transform: uppercase;
+      font-weight: 300;
+      transition: transform 0.5s;
+      cursor: default; }
+      /* line 255, /JOBS/Webtrend/css/style.scss */
+      header ul.slider li .big_title:hover {
+        transform: scale(1.1); }
+      /* line 258, /JOBS/Webtrend/css/style.scss */
+      header ul.slider li .big_title strong {
+        font-family: "AvantGardeGothicC-Demi";
+        font-weight: 700; }
+      /* line 262, /JOBS/Webtrend/css/style.scss */
+      header ul.slider li .big_title .subtitle {
+        position: absolute;
+        padding: 25px 30px 25px;
+        left: 25%;
+        background-image: url(../images/sliders/subtitle.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 18px;
+        font-family: "AvantGardeGothicC-Demi";
+        font-weight: 700; }
+      /* line 275, /JOBS/Webtrend/css/style.scss */
+      header ul.slider li .big_title .subtitle2 {
+        position: absolute;
+        padding: 25px 30px 25px;
+        font-size: 18px;
+        font-family: "AvantGardeGothicC-Demi";
+        font-weight: 700;
+        left: 55%; }
+      /* line 283, /JOBS/Webtrend/css/style.scss */
+      header ul.slider li .big_title .subtitle3 {
+        position: absolute;
+        padding: 38px 30px 45px;
+        left: 25%;
+        background-image: url(../images/sliders/subtitle.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 18px;
+        font-family: "AvantGardeGothicC-Demi";
+        font-weight: 700; }
+      /* line 294, /JOBS/Webtrend/css/style.scss */
+      header ul.slider li .big_title .subtitle4 {
+        position: absolute;
+        padding: 30px 130px 35px;
+        left: 25%;
+        background-image: url(../images/sliders/subtitle.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 18px;
+        font-family: "AvantGardeGothicC-Demi";
+        font-weight: 700; }
+      /* line 305, /JOBS/Webtrend/css/style.scss */
+      header ul.slider li .big_title .big_text {
+        display: inline-block;
+        width: 50%;
+        font-size: 70px;
+        padding-right: 0;
+        padding-left: 13px; }
+      /* line 312, /JOBS/Webtrend/css/style.scss */
+      header ul.slider li .big_title .small_text {
+        display: inline-block;
+        width: 41%;
+        font-size: 25px;
+        padding-left: 30px;
+        padding-right: 0;
+        padding-top: 15px; }
+    /* line 321, /JOBS/Webtrend/css/style.scss */
+    header ul.slider li .fast {
+      font-family: "AvantGardeGothicC-Demi";
+      font-size: 152px;
+      font-weight: 700;
+      line-height: 48px;
+      text-transform: uppercase;
+      margin-top: 100px;
+      text-align: left;
+      margin-left: 10%; }
+    /* line 331, /JOBS/Webtrend/css/style.scss */
+    header ul.slider li .vygodno {
+      font-size: 114px;
+      font-weight: 300;
+      line-height: 36px;
+      text-transform: uppercase;
+      margin-top: 30px;
+      text-align: left;
+      margin-left: 18%; }
+    /* line 340, /JOBS/Webtrend/css/style.scss */
+    header ul.slider li .nadezhno {
+      font-family: "AvantGardeGothicC-Demi";
+      font-size: 87px;
+      font-weight: 700;
+      line-height: 36px;
+      text-transform: uppercase;
+      margin-top: 47px;
+      text-align: left;
+      margin-left: 10.4%; }
+  /* line 352, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-item:nth-child(1) li {
+    background-image: url(../images/sliders/slider_1_bg.jpg); }
+  /* line 355, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-item:nth-child(2) li {
+    background-image: url(../images/sliders/slider_2.jpg);
+    padding-top: 29vh; }
+  /* line 359, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-item:nth-child(3) li {
+    background-image: url(../images/sliders/slider_3.jpg);
+    padding-top: 6vh; }
+  /* line 363, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-item:nth-child(4) li {
+    background-image: url(../images/sliders/slider_4.jpg);
+    padding-top: 38vh; }
+  /* line 367, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-item:nth-child(5) li {
+    background-image: url(../images/sliders/slider_5.jpg);
+    padding-top: 6vh; }
+  /* line 371, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-item:nth-child(6) li {
+    background-image: url(../images/sliders/slider_6.jpg);
+    padding-top: 38vh; }
+  /* line 375, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-buttons {
+    display: none; }
+  /* line 378, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-pagination {
+    position: absolute;
+    height: 20px;
+    bottom: 50px;
+    width: 100%;
+    padding-left: 290px;
+    text-align: center; }
+    /* line 385, /JOBS/Webtrend/css/style.scss */
+    header ul.slider .owl-pagination .owl-page {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 3px;
+      background-image: url(../images/sliders/page.png);
+      background-repeat: no-repeat;
+      background-position: center; }
+      /* line 394, /JOBS/Webtrend/css/style.scss */
+      header ul.slider .owl-pagination .owl-page.active {
+        background-image: url(../images/sliders/page_active.png); }
+
+@media only screen and (max-width: 1846px) {
+  /* line 403, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle2 {
+    left: 58%; }
+  /* line 406, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title {
+    font-size: 45px; }
+  /* line 409, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .small_text {
+    font-size: 22px;
+    padding-top: 21px; }
+  /* line 413, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .big_text {
+    font-size: 59px; }
+  /* line 416, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .fast {
+    margin-left: 13%; }
+  /* line 417, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .vygodno {
+    margin-left: 22%; }
+  /* line 418, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .nadezhno {
+    margin-left: 13.4%; } }
+
+@media only screen and (max-width: 1366px) {
+  /* line 421, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li span.title {
+    font-size: 16px;
+    letter-spacing: .32em; }
+  /* line 425, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title {
+    font-size: 35px; }
+  /* line 428, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .big_text {
+    font-size: 45px; }
+  /* line 431, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .small_text {
+    font-size: 15px; }
+  /* line 434, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle4 {
+    padding: 17px 69px 24px; }
+  /* line 437, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle2 {
+    left: 66%; } }
+
+@media only screen and (max-width: 1280px) {
+  /* line 442, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle2 {
+    font-size: 16px;
+    left: 73%;
+    padding: 25px 0; }
+  /* line 447, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .big_text {
+    font-size: 41px; }
+  /* line 450, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .small_text {
+    padding-top: 16px; }
+  /* line 453, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title {
+    font-size: 33px; } }
+
+@media only screen and (max-width: 1024px) {
+  /* line 459, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-pagination, header ul.slider li div.people {
+    background-position: center bottom;
+    background-size: 120%; }
+  /* line 463, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li span.title {
+    letter-spacing: 0.3em; }
+  /* line 466, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title {
+    font-size: 24px; }
+  /* line 469, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle {
+    left: 15%; }
+  /* line 472, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle2 {
+    font-size: 15px;
+    left: 70%; }
+  /* line 476, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li span.title:nth-child(1)::after, header ul.slider li span.title:nth-child(2)::after {
+    margin: 0 15px; }
+  /* line 479, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(2) li .big_title {
+    font-size: 30px; }
+  /* line 482, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(3) li .big_title {
+    font-size: 36px; }
+  /* line 485, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(5) li .big_title {
+    font-size: 27px; }
+  /* line 488, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(1) li .big_title, .owl-item:nth-child(6) li .big_title {
+    font-size: 32px; }
+  /* line 491, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .fast {
+    font-size: 100px; }
+  /* line 494, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .vygodno {
+    font-size: 80px;
+    margin-top: 10px; }
+  /* line 498, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .nadezhno {
+    font-size: 70px;
+    margin-top: 26px; }
+  /* line 502, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle4 {
+    left: 20%; }
+  /* line 505, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle3 {
+    left: 15%; }
+  /* line 508, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .big_text {
+    font-size: 45px; }
+  /* line 511, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .big_text {
+    width: 60%;
+    padding-left: 14px; }
+  /* line 515, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .small_text {
+    width: 38%;
+    font-size: 13px;
+    padding-left: 0px; } }
+
+@media only screen and (max-width: 1023px) {
+  /* line 522, /JOBS/Webtrend/css/style.scss */
+  nav {
+    left: -290px;
+    transition: .5s; }
+  /* line 526, /JOBS/Webtrend/css/style.scss */
+  nav.active {
+    left: 0;
+    transition: .5s; }
+  /* line 530, /JOBS/Webtrend/css/style.scss */
+  .gamburger {
+    display: inline-block;
+    transition: .5s; }
+  /* line 534, /JOBS/Webtrend/css/style.scss */
+  .gamburger.active {
+    left: 310px;
+    transition: .5s; }
+  /* line 538, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li div.people {
+    padding-left: 0; }
+  /* line 541, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-pagination {
+    padding-left: 0; } }
+
+@media only screen and (max-width: 375px) {
+  /* line 547, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li div.people {
+    background-size: cover;
+    background-position: center; }
+  /* line 551, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li span.title {
+    font-size: 12px;
+    letter-spacing: .11em; }
+  /* line 555, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li span.title:nth-child(1)::after, header ul.slider li span.title:nth-child(2)::after {
+    margin: 0 5px; }
+  /* line 558, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(1) li .big_title {
+    font-size: 16px; }
+  /* line 561, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle {
+    font-size: 12px;
+    padding: 17px 29px; }
+  /* line 565, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle2 {
+    display: none; }
+  /* line 568, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(2) li .big_title {
+    font-size: 14px; }
+  /* line 571, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(3) li .big_title {
+    font-size: 16px; }
+  /* line 574, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .big_text {
+    font-size: 30px; }
+  /* line 577, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(4) li .big_title {
+    font-size: 16px; }
+  /* line 580, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle3 {
+    font-size: 10px;
+    padding: 23px 24px 21px;
+    left: 10%; }
+  /* line 585, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(5) li .big_title {
+    font-size: 22px; }
+  /* line 588, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .fast {
+    font-size: 58px;
+    margin-top: 30px; }
+  /* line 589, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .vygodno {
+    font-size: 40px;
+    margin-top: -10px; }
+  /* line 590, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .nadezhno {
+    font-size: 30px;
+    margin-top: -5px; }
+  /* line 592, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(6) li .big_title {
+    font-size: 16px; }
+  /* line 595, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle4 {
+    font-size: 10px;
+    padding: 11px 49px 15px;
+    left: 10%; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  /* line 607, /JOBS/Webtrend/css/style.scss */
+  nav.active {
+    width: 217px;
+    left: 0;
+    transition: .5s; }
+  /* line 612, /JOBS/Webtrend/css/style.scss */
+  .gamburger.active {
+    left: 240px; }
+  /* line 615, /JOBS/Webtrend/css/style.scss */
+  nav a.logotype {
+    height: 70px; }
+  /* line 618, /JOBS/Webtrend/css/style.scss */
+  nav a.btn, nav a.logotype, nav a.phone, nav ul.main_menu li {
+    margin-left: 30px; }
+  /* line 621, /JOBS/Webtrend/css/style.scss */
+  nav a.phone {
+    margin-top: 10px; }
+  /* line 624, /JOBS/Webtrend/css/style.scss */
+  nav ul.main_menu li a.portfolio {
+    margin: 20px 0 10px; }
+  /* line 627, /JOBS/Webtrend/css/style.scss */
+  nav ul.main_menu li a {
+    margin: 7px 0; }
+  /* line 630, /JOBS/Webtrend/css/style.scss */
+  nav ul.second_menu li a {
+    margin: 2px 0 2px 30px; }
+  /* line 633, /JOBS/Webtrend/css/style.scss */
+  nav ul.main_menu li a::before {
+    display: none; }
+  /* line 638, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li div.people {
+    background-size: cover;
+    background-position: center; }
+  /* line 642, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li span.title {
+    font-size: 10px;
+    letter-spacing: .02em; }
+  /* line 646, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li span.title:nth-child(1)::after, header ul.slider li span.title:nth-child(2)::after {
+    margin: 0 3px; }
+  /* line 649, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(1) li .big_title {
+    font-size: 12px;
+    margin-top: 15px; }
+  /* line 653, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(2) li .big_title {
+    font-size: 11px; }
+  /* line 656, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(3) li .big_title {
+    margin-top: 0;
+    font-size: 12px; }
+  /* line 660, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(4) li .big_title {
+    font-size: 12px; }
+  /* line 663, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(5) li .big_title {
+    font-size: 10px; }
+  /* line 666, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(6) li .big_title {
+    font-size: 14px; }
+  /* line 669, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle {
+    font-size: 10px;
+    padding: 17px 20px;
+    margin-top: 10px;
+    left: 14%; }
+  /* line 675, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle2 {
+    display: none; }
+  /* line 678, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .big_text {
+    font-size: 30px;
+    width: 100%; }
+  /* line 682, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .small_text {
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 10px; }
+  /* line 687, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle3 {
+    font-size: 9px;
+    left: 6%;
+    padding: 21px 15px 25px; }
+  /* line 692, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle4 {
+    font-size: 10px;
+    left: 13%;
+    padding: 9px 40px 12px; }
+  /* line 697, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .fast {
+    font-size: 58px;
+    margin-top: 30px;
+    margin-left: 10px; }
+  /* line 698, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .vygodno {
+    font-size: 40px;
+    margin-top: -10px;
+    margin-left: 20px; }
+  /* line 699, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .nadezhno {
+    font-size: 30px;
+    margin-top: -5px;
+    margin-left: 10px; }
+  /* line 701, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-item:nth-child(2) li {
+    padding-top: 21vh; }
+  /* line 702, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-item:nth-child(3) li {
+    padding-top: 0vh; }
+  /* line 703, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-item:nth-child(4) li {
+    padding-top: 20vh; }
+  /* line 704, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-item:nth-child(5) li {
+    padding-top: 0vh; }
+  /* line 705, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-item:nth-child(6) li {
+    padding-top: 22vh; } }
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  /* line 714, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li div.people {
+    background-position: center bottom;
+    background-size: 70%; }
+  /* line 718, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(1) li .big_title {
+    font-size: 20px;
+    margin-top: 15px; }
+  /* line 722, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li span.title {
+    letter-spacing: .1em;
+    font-size: 13px; }
+  /* line 726, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle {
+    font-size: 12px;
+    padding: 20px 31px;
+    left: 10%; }
+  /* line 731, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle2 {
+    font-size: 12px;
+    padding: 20px 0; }
+  /* line 735, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li div.people {
+    padding-top: 30px; }
+  /* line 740, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-item:nth-child(2) li {
+    padding-top: 28vh; }
+  /* line 743, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(2) li .big_title {
+    font-size: 19px; }
+  /* line 746, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle2 {
+    font-size: 10px; }
+  /* line 751, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(3) li .big_title {
+    font-size: 25px;
+    margin-top: 0; }
+  /* line 755, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .big_text {
+    font-size: 28px; }
+  /* line 758, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .small_text {
+    font-size: 10px;
+    padding-top: 0; }
+  /* line 764, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-item:nth-child(4) li {
+    padding-top: 34vh; }
+  /* line 767, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(4) li .big_title {
+    font-size: 16px;
+    margin-top: 0; }
+  /* line 771, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle3 {
+    font-size: 10px;
+    padding: 19px 17px 25px;
+    left: 20%; }
+  /* line 778, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(5) li .big_title {
+    font-size: 20px;
+    margin-top: 0; }
+  /* line 782, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .fast {
+    font-size: 60px;
+    margin-top: 30px; }
+  /* line 783, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .vygodno {
+    font-size: 40px;
+    margin-top: -15px; }
+  /* line 784, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .nadezhno {
+    font-size: 30px;
+    margin-top: -7px; }
+  /* line 787, /JOBS/Webtrend/css/style.scss */
+  header ul.slider .owl-item:nth-child(6) li {
+    padding-top: 34vh; }
+  /* line 790, /JOBS/Webtrend/css/style.scss */
+  .owl-item:nth-child(6) li .big_title {
+    padding: 12px 25px;
+    font-size: 16px;
+    margin-top: 0; }
+  /* line 795, /JOBS/Webtrend/css/style.scss */
+  header ul.slider li .big_title .subtitle4 {
+    font-size: 10px;
+    padding: 11px 42px 13px; } }
+
+/*# sourceMappingURL=style.css.map */
