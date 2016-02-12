@@ -1,3 +1,16 @@
+$(window).on('load', function () {
+	/*
+	$('nav').css("left", "-290px").delay(2000).queue(function (){
+        $(this).css("left", "inherit").deuque();
+    });
+    */
+    $('nav').addClass("loaded").delay(2000).queue(function (){
+        $(this).removeClass("loaded").deuque();
+    });
+	$('.thecube').hide();
+    $('body').addClass('loaded');
+});
+
 $(document).ready(function(){
 
 	function windowSize(){
@@ -41,7 +54,7 @@ $(document).ready(function(){
     })
     */
     $(window).bind('mousewheel', function(e){
-        if(e.originalEvent.wheelDelta > 1000000)
+        if(e.originalEvent.wheelDelta > 1)
         {
             console.log('up');
             owl.trigger('owl.prev');
@@ -128,3 +141,5 @@ $(document).ready(function(){
 
 
 });
+
+
